@@ -1,0 +1,25 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "subscribe": "node -e \"import('./api/chat.subscriber.js').then(m=>m.subscribe().then(console.log).catch(e=>{console.error(e.response?.data||e.message);process.exit(1)}))\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10",
+    "socket": "^1.1.25",
+    "socket.io": "^4.8.1"
+  }
+}

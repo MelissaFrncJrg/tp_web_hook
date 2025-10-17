@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Webhook WebSocket</title>
+  <style> @import "/src/style.css"; </style>
+</head>
+<body>
+  <h1>Client Webhook WebSocket</h1>
+
+  <fieldset>
+    <legend>Connexion au back</legend>
+    <label>
+      IP :
+      <input id="ip" placeholder="ex: 10.222.333.444" />
+    </label>
+    <label>
+      Port :
+      <input id="port" placeholder="3000" value="3000" />
+    </label>
+    <button id="connectBtn">Se connecter</button>
+    <span id="status"></span>
+
+  </fieldset>
+
+  <div id="log"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
